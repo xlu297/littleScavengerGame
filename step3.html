@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Step 3: Find the Image</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Find the Cat Picture</h1>
+    </header>
+    <main>
+      <div id="images-container">
+        <img src="dog.jpg" alt="Dog" data-correct="false" />
+        <img src="cat.jpg" alt="Cat" data-correct="true" />
+        <!-- Correct image -->
+        <img src="bird.jpg" alt="Bird" data-correct="false" />
+        <img src="fox.jpg" alt="Fox" data-correct="false" />
+      </div>
+    </main>
+    <script>
+      document.querySelectorAll('#images-container img').forEach((img) => {
+        img.addEventListener('click', () => {
+          if (img.dataset.correct === 'true') {
+            alert('Correct! Proceeding to Final Step.');
+            window.location.href = 'final.html'; // Redirect to Final Step
+          } else {
+            alert('Wrong image! Try again.');
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

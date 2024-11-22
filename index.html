@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scavenger Hunt</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="game">
+      <!-- Step 1 -->
+      <div id="step1" class="hidden">
+        <h1>Find the Purple Button</h1>
+        <div id="buttons-container">
+          <button style="background-color: red">Dog</button>
+          <button style="background-color: green">Tiger</button>
+          <button style="background-color: blue">Fox</button>
+          <button style="background-color: purple">Cat</button>
+          <button style="background-color: orange">Horse</button>
+          <button style="background-color: violet">Bird</button>
+          <button style="background-color: pink">Lion</button>
+          <button style="background-color: brown">Bear</button>
+          <button style="background-color: cyan">Frog</button>
+        </div>
+      </div>
+
+      <!-- Step 2 -->
+      <div id="step2" class="hidden">
+        <h1>Enter the Keyword</h1>
+        <input type="text" id="keyword-input" />
+        <button id="keyword-submit">Submit</button>
+      </div>
+
+      <!-- Step 3 -->
+      <div id="step3" class="hidden">
+        <h1>Find Correct Picture</h1>
+        <div id="images-container">
+          <img src="dog.jpg" alt="Dog" />
+          <img src="cat.jpg" alt="Cat" />
+          <img src="tiger.jpg" alt="Tiger" />
+          <img src="fox.jpg" alt="Fox" />
+        </div>
+      </div>
+
+      <!-- Success -->
+      <div id="success" class="hidden">
+        <h1>🎉 Congratulations! 🎉</h1>
+        <p>You found the treasure! 🏆</p>
+        <img
+          id="treasure-image"
+          src="treasure_chest.jpg"
+          alt="Treasure Chest"
+        />
+        <div id="confetti"></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

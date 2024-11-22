@@ -1,0 +1,130 @@
+/* General styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #c6c6c6;
+}
+
+#game {
+  text-align: center;
+  max-width: 550px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+h1 {
+  font-size: 1.8em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Styling for Step 1 buttons*/
+#buttons-container {
+  display: grid;
+  grid-template-columns: repeat(3, auto); /* 3x3 grid */
+  justify-content: center;
+  gap: 5px;
+  margin-top: 20px;
+}
+
+#buttons-container button {
+  width: 80px;
+  height: 80px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#buttons-container button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for Step 2 input and submit*/
+#step2 input {
+  width: 80%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+#step2 button {
+  padding: 10px 30px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+#step2 button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+#step2 button:active {
+  transform: scale(1);
+}
+
+/* Styling for Step 3 images */
+#images-container {
+  display: grid;
+  grid-template-columns: repeat(2, auto); /* 2x2 grid */
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+#images-container img {
+  width: 150px;
+  height: 150px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#images-container img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Success styling */
+#success {
+  color: #28a745;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+#success img {
+  width: 200px;
+  height: auto;
+  margin: 20px auto;
+  display: block;
+  border: 5px solid gold;
+  border-radius: 15px;
+  box-shadow: 0 8px 15px rgba(129, 107, 0, 0.559);
+}
